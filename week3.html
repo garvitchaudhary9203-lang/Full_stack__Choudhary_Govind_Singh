@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 Layout Tasks</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+    }
+
+    /* ---------- TASK 6: SIDEBAR ---------- */
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    /* ---------- TASK 7: PRODUCT CARD ---------- */
+    .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      max-width: 250px;
+      margin: 20px auto;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .product-card button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      background: #28a745;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background: #218838;
+    }
+
+    /* ---------- TASK 8: BLOG LAYOUT ---------- */
+    .blog {
+      display: flex;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .blog-post {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* ---------- Responsive Design ---------- */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        text-align: center;
+      }
+
+      .blog {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Layout -->
+  <div class="container">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome to the Main Content</h1>
+      <p>This is the content area next to the sidebar.</p>
+
+      <!-- Product Card -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Cool Product</h3>
+        <p>This is a short description of the product.</p>
+        <button>Buy Now</button>
+      </div>
+
+      <!-- Blog Layout -->
+      <div class="blog">
+        <div class="blog-post">
+          <h3>Blog Post 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="blog-post">
+          <h3>Blog Post 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="blog-post">
+          <h3>Blog Post 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
