@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Company</title>
+  <style>
+    /* ===== Global Styles (Element Selector) ===== */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* ===== ID Selector ===== */
+    #about-title {
+      color: hsl(200, 70%, 35%); /* HSL color format */
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Class Selector ===== */
+    .highlight {
+      background-color: rgba(255, 200, 0, 0.3); /* RGBA color format */
+      padding: 5px;
+    }
+
+    /* ===== Pseudo-class Selector ===== */
+    a {
+      color: rgb(0, 120, 215); /* RGB color format */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* ===== Pseudo-element Selector ===== */
+    p::first-letter {
+      font-size: 200%;
+      color: #FF5733; /* HEX color format */
+      font-weight: bold;
+    }
+
+    /* ===== List Styling ===== */
+    h2 {
+      margin-top: 30px;
+      color: hsl(150, 60%, 30%);
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    ol {
+      list-style-type: upper-roman;
+      padding-left: 20px;
+    }
+
+    .favorite {
+      color: #FF5733;
+      font-weight: bold;
+      background-color: #ffe6e6;
+      padding: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Us Section -->
+  <h1 id="about-title">About Us</h1>
+  <p class="highlight">
+    Welcome to <b>TechVision</b>, a company passionate about innovation and design.
+    Our mission is to build creative, user-friendly digital solutions that 
+    make life easier. <a href="#">Learn More</a>
+  </p>
+
+  <!-- Movie List -->
+  <h2>My Favorite Movies</h2>
+  <ul>
+    <li>Inception</li>
+    <li class="favorite">Interstellar</li>
+    <li>The Dark Knight</li>
+    <li>Avengers: Endgame</li>
+    <li>Spider-Man: No Way Home</li>
+  </ul>
+
+  <!-- Cities List -->
+  <h2>Cities I Love</h2>
+  <ol>
+    <li>Tokyo</li>
+    <li>Paris</li>
+    <li>New York</li>
+    <li>London</li>
+    <li>Dubai</li>
+  </ol>
+
+</body>
+</html>
